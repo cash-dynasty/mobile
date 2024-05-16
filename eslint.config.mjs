@@ -5,7 +5,7 @@ import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
 
 
 export default [
-  {languageOptions: { globals: globals.node }},
+  {languageOptions: { globals: globals.node }, plugins: ["prettier"], ignores: ["**/*.mjs", '.templates/*']},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReactConfig,
