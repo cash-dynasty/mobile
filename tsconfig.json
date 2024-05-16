@@ -1,7 +1,10 @@
 {
   "extends": "@react-native/typescript-config/tsconfig.json",
+  "ts-node": {
+    "esm": true
+  },
   "compilerOptions": {
-    "target": "es6",
+    "target": "ESNext",
     "rootDirs": ["src"],
     "lib": ["es6", "dom", "esnext"],
     "allowJs": true,
@@ -16,7 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "baseUrl": "./",
     "noImplicitAny": true,
     "noImplicitThis": true,
